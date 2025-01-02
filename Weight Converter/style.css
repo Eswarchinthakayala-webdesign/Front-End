@@ -1,0 +1,82 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100vh;
+    background: #011b12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -20%;
+    box-shadow: 0 0 10px #fff;
+}
+h1
+{
+    color: #d0ea09;
+    font-size: 36px;
+    
+}
+input
+{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #d0ea09;
+    box-shadow: 0px 0px 10px #d0ea09;
+    margin-bottom: 20px;
+}
+.card
+{
+    background: #fff;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    /* height: 50px; */
+    /* display: none; */
+    
+}
+h4
+{
+    font-weight: 100;
+}
+.card:nth-child(1)
+{
+    background: #e60606;
+    color:#fff;
+}
+.card:nth-child(2)
+{
+    background: #060ae6;
+    color:#fff;
+}
+.card:nth-child(3)
+{
+    background: #24e606;
+    color:#fff;
+}
+#gramsOutput,#kgOutput,#ounOutput
+{
+    font-size: 16px;
+    font-weight:lighter;
+    margin-top:5px;
+}
