@@ -1,0 +1,148 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:not(i)
+{
+    font-family:'Poppins',sans-serif
+}
+
+body
+{
+    background: #64a532;
+}
+.container
+{
+    background: #ffffff;
+    padding: 3em 3.8em;
+    font-size: 16px;
+    width: 90vw;
+    /* height: 30vh; */
+    max-width: 32em;
+    position: absolute;
+    transform: translate(-50%);
+    top: 1em;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(42,32,0,0.4);
+}
+.search-box
+{
+    width: 100%;
+   display: grid;
+   grid-template-columns: 9fr 3fr;
+   gap: 10px;
+}
+.search-box input
+{
+    border: none;
+    font-size: 1em;
+    padding: 0.6em;
+    outline: none;
+    border-bottom: 2px solid #64a532;
+}
+.search-box button
+{
+    background: #64a532;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+img
+{
+    display: block;
+    width: 50%;
+    margin:1.8em  auto 0 auto;
+    border-radius: 10px;
+
+}
+#recipe
+{
+    position: absolute;
+    background: #ffffff;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    border-radius: 10px;
+    display: none;
+}
+#recipe pre
+{
+    white-space: pre-wrap;
+    word-break: break-word;
+    padding: 2.5em 1.2em 1.2em 1.2em;
+}
+#hide-recipe
+{
+    font-size: 1em;
+    position: relative;
+    width: 1.8em;
+    height: 1.8em;
+    background: #64a532;
+    border: none;
+    top: 1.2em;
+    left: 90%;
+    border-radius: 0.3em;
+
+}
+
+.details
+{
+    background: #64a532;
+   position: relative;
+   text-align: center;
+   padding: 0.6em 0;
+   margin: 10px;
+
+}
+.details h2
+{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.details h4
+{
+    font-size: 1em;
+    font-weight: 400;
+}
+#show-recipe
+{
+    font-size: 1em;
+    position: relative;
+    left: 75%;
+    padding: 0.9em 0.6em;
+    background:#64a532;
+    top: 1.5em;
+    border-radius: 0.3em;
+    font-weight: 600;
+    border: none;
+}
+ul
+{
+    font-size: 1em;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 30px;
+    gap: 10px;
+}
+@media screen and (max-width:500px) {
+    .container
+    {
+        font-size: 14px;
+    }
+    
+}
+h4
+{
+    margin-top: 1.8em;
+    text-align: center;
+
+}
