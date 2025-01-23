@@ -12,7 +12,7 @@ body
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #349bdb;
+    background: #1f1b24;
 }
 .container
 {   height: 260px;
@@ -62,7 +62,7 @@ header p
 .form button
 {
     margin-top: 20px;
-    background-color: #349bdb;
+    background-color: #bb86fc;
     cursor: pointer;
     font-size: 17px;
     color: #fff;
