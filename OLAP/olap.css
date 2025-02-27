@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family:"Poppins",sans-serif;
+    text-align: center;
+    background: #2f3b47;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    border: 2px solid #3d3e8e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #393a92;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    background: linear-gradient(to right, #bb86fc, #aa6af8, #d612cc, #fc0ef0, #6d1986, #530969, #d616c0);
+    background-size: 200%;
+    background-clip: text;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+    text-shadow: 0 0 5px #d612cc12;
+}
+
+@keyframes animate-gradient {  
+    to { background-position: 200%; }
+}
+label
+{
+    color: #03dac5;
+    font-weight: bold;
+}
+
+.input-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.control-div, .olap-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background-color: #bb86fc;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+    border: none;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #aa6af8;
+}
+
+#controls {
+    background: #1f1b24;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    width: 90%;
+    border: 2px solid #d612cc4f;
+    margin: 20px auto;
+    
+}
+#controls:hover
+{
+    box-shadow: 0 0 10px #d612cc88;
+}
+
+canvas {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+}
+.op-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+#pivotTable {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+    text-align: left;
+}
+
+#pivotTable th, #pivotTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#pivotTable th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .control-div, .olap-div,.op-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input, select, button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #controls {
+        width: 95%;
+    }
+
+    #pivotTable {
+        font-size: 14px;
+    }
+}
